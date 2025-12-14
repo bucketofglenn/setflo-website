@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/icon_1765710565012.png";
 
 const navLinks = [
   { href: "/blog", label: "Blog" },
@@ -16,7 +17,8 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
-        <Link href="/" data-testid="link-home">
+        <Link href="/" data-testid="link-home" className="flex items-center gap-2">
+          <img src={logoImage} alt="Setflo" className="w-8 h-8 rounded-lg" />
           <span className="text-xl font-bold tracking-tight">Setflo</span>
         </Link>
 
