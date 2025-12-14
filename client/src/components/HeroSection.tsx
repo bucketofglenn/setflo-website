@@ -1,12 +1,9 @@
 import { Button } from "@/components/ui/button";
 import PhoneMockup from "./PhoneMockup";
-import { ArrowDown } from "lucide-react";
+import { ArrowRight } from "lucide-react";
+import { Link } from "wouter";
 
 export default function HeroSection() {
-  const scrollToEmailCapture = () => {
-    document.getElementById("email-capture")?.scrollIntoView({ behavior: "smooth" });
-  };
-
   return (
     <section className="min-h-[85vh] pt-24 pb-16 flex items-center">
       <div className="max-w-7xl mx-auto px-6 w-full">
@@ -16,44 +13,43 @@ export default function HeroSection() {
               className="text-5xl md:text-7xl font-bold tracking-tight leading-none"
               data-testid="text-hero-title"
             >
-              Do one thing well.
+              One focus. No distractions.
             </h1>
             <p
               className="mt-6 text-xl md:text-2xl font-semibold text-muted-foreground"
               data-testid="text-hero-subtitle"
             >
-              One focus. No distractions.
+              Do one thing well.
             </p>
             <p
               className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
               data-testid="text-hero-description"
             >
-              Setflo is a single-focus practice timer that helps you show up daily—without
-              habit clutter, dashboards, or noise.
+              Track the total time you spend practicing one skill — and watch it add up.
             </p>
-
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <Button size="lg" asChild data-testid="button-download-hero">
-                {/* TODO: Replace with actual App Store URL */}
-                <a href="#download">Download on iOS</a>
-              </Button>
-              <Button
-                variant="ghost"
-                size="lg"
-                onClick={scrollToEmailCapture}
-                data-testid="button-get-updates"
-              >
-                Get updates
-                <ArrowDown className="ml-2 h-4 w-4" />
-              </Button>
-            </div>
 
             <p
-              className="mt-12 text-sm text-muted-foreground"
-              data-testid="text-social-proof"
+              className="mt-6 text-sm text-muted-foreground/80 max-w-lg leading-relaxed italic"
+              data-testid="text-hero-philosophy"
             >
-              Built for musicians, martial artists, writers, and anyone chasing mastery.
+              No habit stacks. No schedules. No noise.<br />
+              Just show up, log your time, and let consistency compound.
             </p>
+
+            <div className="mt-10 flex flex-wrap items-center gap-6">
+              <Button size="lg" asChild data-testid="button-download-hero">
+                {/* TODO: Replace with actual App Store URL */}
+                <a href="#download">Download on the App Store</a>
+              </Button>
+              <Link
+                href="#faq"
+                className="text-sm text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1"
+                data-testid="link-learn-more"
+              >
+                Learn how Setflo works
+                <ArrowRight className="w-4 h-4" />
+              </Link>
+            </div>
           </div>
 
           <div className="order-1 lg:order-2 flex justify-center">
