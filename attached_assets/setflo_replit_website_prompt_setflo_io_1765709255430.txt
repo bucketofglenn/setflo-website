@@ -1,0 +1,170 @@
+REPLIT PROMPT — BUILD THE FULL SETFLO WEBSITE (setflo.io)
+
+Domain + socials (use these placeholders throughout the site — I’ll set them up later):
+- Primary domain: https://setflo.io
+- Instagram: https://instagram.com/setflo.io
+Recommended email addresses (use these in mailto links + copy):
+- Support: support@setflo.io  (primary user support)
+- Privacy: privacy@setflo.io  (privacy requests)
+- Press: press@setflo.io      (press/partnerships)
+- Hello: hello@setflo.io      (general contact)
+- Legal: legal@setflo.io      (terms/legal requests)
+
+IMPORTANT: The site should be deploy-ready even if these inboxes don’t exist yet.
+
+================================================================================
+GOAL
+Create a clean, fast, slightly rebellious marketing website for Setflo (iOS app).
+Tagline: “Do one thing well.”
+Guiding line: “One focus. No distractions.”
+Category: Health & Fitness (secondary: Productivity)
+Tone: calm-minimal but punchy; no “hustle” vibe.
+
+================================================================================
+TECH REQUIREMENTS
+- Next.js (App Router) + TypeScript + TailwindCSS
+- Fully responsive
+- Deploy-ready
+- No database
+- Email capture (“Get updates”) using a POST endpoint that stores emails to a local JSON file in the repo (e.g. /data/waitlist.json). If file write fails (serverless), fall back to in-memory and log a clear warning. Add TODO to wire to ConvertKit/Mailchimp later.
+- SEO basics: meta title/description, Open Graph tags, Twitter card, favicon placeholder
+- Analytics placeholder (commented): Plausible or GA
+- Ensure npm run build passes with zero TypeScript errors
+
+================================================================================
+ROUTES / SITE STRUCTURE
+1) /              Home (landing)
+2) /support       Support page
+3) /privacy       Privacy policy
+4) /terms         Terms page (simple)
+5) /blog          Blog index (MDX-ready)
+6) /blog/[slug]   Blog post template (MDX)
+7) /press         Press kit page
+
+================================================================================
+DESIGN DIRECTION
+- Minimal, “quiet luxury,” generous whitespace
+- Bold headline + strong subhead
+- One accent color (choose a confident but tasteful accent — e.g. electric blue or sharp lime)
+- Subtle lightweight animations (fade/slide) — keep performance high
+- Hero includes a phone mock area using placeholder image(s). I’ll replace with real screenshots later.
+
+================================================================================
+HOMEPAGE CONTENT (WRITE THE COPY)
+Header nav: Setflo | Blog | Support | Privacy | Download
+Primary CTA: “Download on iOS” (link placeholder — put a TODO to insert App Store URL)
+Secondary CTA: “Get updates” (scroll to email capture)
+
+HERO
+- H1: Do one thing well.
+- Subhead: One focus. No distractions.
+- Body: 2–3 lines: Setflo is a single-focus practice timer that helps you show up daily—without habit clutter, dashboards, or noise.
+- Social proof row: “Built for musicians, martial artists, writers, and anyone chasing mastery.”
+
+SECTIONS
+1) The problem:
+   - “Most habit apps sell you more… Setflo sells you less.”
+   - Briefly mention habit clutter, overwhelming dashboards, too many streak mechanics.
+
+2) What Setflo is (feature bullets/cards):
+   - Single focus timer
+   - Session logging
+   - Daily total + lifetime total
+   - Milestones & celebrations
+   - Trophy cabinet (replay on supported platforms)
+   - Export/import backup (user-controlled)
+
+3) How it feels:
+   - Calm, minimal, motivating — no streak shame
+
+4) Use cases (cards):
+   - Music practice, karate, writing, rehab, language learning
+
+5) FAQ (accordion)
+   - Is it a habit tracker?
+     “Not really. Setflo is a single-focus practice log—built for mastery, not habit clutter.”
+   - Do I need streaks?
+     “No. You can show up imperfectly and still make progress.”
+   - Is my data private?
+     “Yes. Your data stays on-device. Backups are user-initiated exports.”
+   - Can I change my focus later?
+     “Yes — but Setflo is designed to help you commit to one thing at a time.”
+
+6) Email capture:
+   - Title: “Get launch notes + updates”
+   - One email field + submit
+   - Success state + toast: “You’re on the list.”
+   - Add simple spam prevention: honeypot field (hidden)
+
+FOOTER
+- Links: Privacy, Terms, Support
+- Social link: Instagram @setflo.io
+- Copyright: © {year} Setflo
+
+================================================================================
+SUPPORT PAGE (/support)
+Include:
+- Intro + “We typically reply within 2–3 business days.” (don’t promise faster)
+- Contact cards:
+  - support@setflo.io (primary)
+  - hello@setflo.io (general)
+- Troubleshooting sections:
+  - Import/export not showing file picker (iOS notes)
+  - Backups / where files go
+  - Notifications (if relevant)
+- Include app version display (read from package.json if available)
+- Add a short “Feature requests” section pointing to hello@setflo.io
+
+================================================================================
+PRIVACY PAGE (/privacy)
+Write a clean privacy policy consistent with “Data not collected” if that’s what App Store privacy states:
+- We do not collect, sell, or share personal data.
+- Data is stored on-device.
+- Export files are user-initiated and saved where the user chooses.
+- No ads, no third-party trackers by default.
+- If analytics is enabled later, update policy.
+- Contact for privacy: privacy@setflo.io
+
+================================================================================
+TERMS PAGE (/terms)
+Simple consumer-friendly terms:
+- Provided “as is,” no warranties
+- Not medical advice
+- User responsible for backups
+- Contact: legal@setflo.io
+
+================================================================================
+BLOG (MDX)
+Implement MDX support and ship with 3 starter posts:
+1) “One focus beats ten habits”
+2) “Practice snacks: why small sessions compound”
+3) “Greasing the groove (without the hype)”
+Make them short but genuinely useful and on-brand.
+
+================================================================================
+PRESS KIT (/press)
+- One-paragraph description of Setflo
+- Feature bullets
+- Screenshots grid (placeholders)
+- Brand assets placeholders (logo svg/png to be added)
+- Press/partnership contact: press@setflo.io
+
+================================================================================
+IMPLEMENTATION DETAILS
+- Reusable components:
+  Header, Footer, CTAButton, Section, PhoneMock, FAQAccordion, Toast
+- Consistent max width + spacing system
+- Form validation (email format), friendly error messages
+- Waitlist API:
+  - POST /api/waitlist
+  - Store timestamp + email
+  - Prevent duplicates
+  - Rate-limit lightly (basic in-memory per-IP throttle is fine)
+- README includes:
+  - npm install
+  - npm run dev
+  - npm run build
+  - How to deploy
+  - Where to set the App Store URL, replace email addresses, add screenshots
+
+Build it now.
