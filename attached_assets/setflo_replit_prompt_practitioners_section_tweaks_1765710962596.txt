@@ -1,0 +1,46 @@
+REPLIT WEBSITE UPDATE PROMPT — Setflo (setflo.io)
+
+Goal: Make small copy + UI tweaks to the “Built for practitioners” section (the grid of cards).
+
+Context
+- This section contains cards like: Music practice, Martial arts, Writing, Rehab & recovery, Language learning.
+- Setflo is a minimalist “one focus, no distractions” practice timer / tracker.
+- Key nuance: Setflo tracks TOTAL TIME spent practicing (one timer + streak/targets). It does NOT track sub-items inside a session (e.g., “scales / études / repertoire” separately).
+- The value prop: any practice counts — serious work and casual play both add up.
+
+What to change
+
+1) Update the “Music practice” card copy
+- Current copy implies users can track sub-items individually.
+- Replace it with copy that clearly communicates:
+  - it tracks total time spent on the instrument
+  - any practice counts (serious pieces, warmups, improvising, “Lost in the Woods”, etc.)
+- Keep it short, friendly, and consistent with the site’s tone.
+
+Suggested replacement copy (feel free to tweak slightly):
+Title: Music practice
+Body: “Piano, guitar, drums—any instrument. Track total time at the instrument. Warmups, repertoire, and just playing around all count.”
+
+2) Add a new card for “Any skill” (so users don’t feel limited)
+- Add an additional card to the same grid that communicates: “anything you want to track”.
+- Keep the same visual style: icon + title + 1–2 sentences.
+- Copy should reinforce flexibility + simplicity.
+
+Suggested new card:
+Title: Any skill
+Body: “Coding, drawing, chess, breathwork—whatever you’re practicing. Set one focus and let the minutes add up.”
+
+Implementation notes
+- Preserve the existing layout, spacing, typography, and any hover/animation behavior.
+- Use an icon that matches the current icon style (simple line icon).
+  - If using lucide-react or similar, options like Sparkles / Target / Zap are fine.
+- Keep the grid responsive:
+  - Desktop: tidy rows.
+  - Mobile: clean single-column stack.
+- Do not introduce new features or claims beyond time tracking / consistency.
+
+Deliverable
+- Apply changes in the page/component where this section is defined.
+- If the cards are driven by a data array (recommended), update the array:
+  - modify the Music practice description
+  - add the new Any skill card object

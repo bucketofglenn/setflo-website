@@ -1,11 +1,11 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Music, Swords, PenTool, Heart, Languages } from "lucide-react";
+import { Music, Swords, PenTool, Heart, Languages, Sparkles } from "lucide-react";
 
 const useCases = [
   {
     icon: Music,
     title: "Music practice",
-    description: "Piano, guitar, violin—any instrument. Track your scales, études, and repertoire work.",
+    description: "Piano, guitar, drums—any instrument. Track total time at the instrument. Warmups, repertoire, and just playing around all count.",
   },
   {
     icon: Swords,
@@ -26,6 +26,11 @@ const useCases = [
     icon: Languages,
     title: "Language learning",
     description: "Vocabulary, speaking practice, immersion time. One language at a time.",
+  },
+  {
+    icon: Sparkles,
+    title: "Any skill",
+    description: "Coding, drawing, chess, breathwork—whatever you're practicing. Set one focus and let the minutes add up.",
   },
 ];
 
