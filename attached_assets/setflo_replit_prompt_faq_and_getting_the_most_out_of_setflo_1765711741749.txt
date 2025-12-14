@@ -1,0 +1,71 @@
+REPLIT PROMPT — Update “Questions” section into two sections:
+1) FAQ
+2) Getting the most out of Setflo
+
+Goal
+- Split the current “Questions” accordion into TWO separate accordion groups/sections.
+- Keep the existing clean, minimalist styling and spacing consistent with the rest of the site.
+- Maintain accessibility (keyboard navigation, aria attributes), and preserve responsive layout.
+
+Where
+- Locate the section currently titled “Questions” (likely a component/section like <Questions /> / <FAQ />).
+- Replace it with:
+  A) Section: “FAQ”
+  B) Section: “Getting the most out of Setflo”
+
+Structure (recommended)
+- Use two stacked sections, each with:
+  - Large H2 title centered (same typographic scale as existing “Questions” header)
+  - Accordion list beneath
+- Keep the same accordion item design (question row + chevron + divider line)
+- Default state: collapsed, click to expand.
+
+Section A: FAQ (Accordion Items)
+1) Q: Is it a habit tracker?
+   A: Not exactly. Setflo is a focus tracker — it measures time spent practicing one skill so you can see your progress add up.
+
+2) Q: Do I need streaks?
+   A: No. Streaks are optional. Set a daily target if it helps, but Setflo is built to keep you practicing — not to guilt you.
+
+3) Q: Is my data private?
+   A: Yes. Your practice data stays on your device unless you choose to export it.
+
+4) Q: Can I rename my focus later?
+   A: Yes.
+      You can update the name of your focus at any time without affecting your saved practice data.
+      If you want to commit to a completely new goal, we recommend starting fresh by clearing your existing data and beginning again.
+      This reflects the core philosophy of Setflo: one goal at a time.
+
+Section B: Getting the most out of Setflo (Accordion Items)
+1) Q: Choose one focus — and keep it simple
+   A: Pick a single skill you want to improve. A clear focus makes progress feel obvious.
+
+2) Q: Count everything that moves you forward
+   A: Warmups, drills, messy sessions, deep work — it all counts. Setflo helps you see that it adds up.
+
+3) Q: Use a daily target as a “minimum”
+   A: Set a small daily target you can hit even on busy days. It’s about consistency, not perfection.
+
+4) Q: Review your history, not your mood
+   A: On off days, check your calendar and totals. Your progress is larger than any single session.
+
+5) Q: Start fresh when the goal changes
+   A: If your focus genuinely changes, clearing data can be a powerful reset. One focus, one chapter at a time.
+
+Copy/Design Notes
+- Keep tone calm, concise, and non-technical.
+- Avoid heavy marketing language.
+- Keep answers short (2–4 lines) and scannable.
+
+Implementation Details
+- If the current section is a single array of questions, split into two arrays: faqItems and tipsItems.
+- Render two accordions with shared AccordionItem component to avoid duplication.
+- Keep the section IDs stable for navigation (e.g., #faq and #getting-the-most-out-of-setflo) if there’s a header nav; otherwise optional.
+- Ensure consistent margins between sections (e.g., 48–72px vertical gap).
+
+Definition of Done
+- Page shows two headings: “FAQ” and “Getting the most out of Setflo”
+- Each has its own accordion list
+- Styling matches existing site
+- Mobile looks clean with correct spacing
+- No lint/build errors
