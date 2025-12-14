@@ -9,17 +9,17 @@ const faqItems = [
   {
     question: "Is it a habit tracker?",
     answer:
-      "Not exactly. Setflo is a focus tracker — it measures time spent practicing one skill so you can see your progress add up.",
+      "No. Setflo is a focus tracker. It measures time spent practicing one skill so you can see your effort add up — even if it happens in small sessions. It's about progress you can feel and prove, not managing a list of habits.",
   },
   {
-    question: "Do I need streaks?",
+    question: "Why doesn't Setflo have reminders or notifications?",
     answer:
-      "No. Streaks are optional. Set a daily target if it helps, but Setflo is built to keep you practicing — not to guilt you.",
+      "Setflo is designed to support practice when you choose to show up — not to guilt you into it. It doesn't try to run your day or create pressure. When you practice, you log the time. That's it. Calm, minimal, and intentional.",
   },
   {
-    question: "Is my data private?",
+    question: "Do I have to create an account?",
     answer:
-      "Yes. Your practice data stays on your device unless you choose to export it.",
+      "No. Setflo doesn't require an account because your practice shouldn't depend on logins, sign-ups, or syncing. It's built to be simple and private: open the app, practice, log time, move on. Your data stays on your device unless you choose to export it.",
   },
   {
     question: "Can I rename my focus later?",

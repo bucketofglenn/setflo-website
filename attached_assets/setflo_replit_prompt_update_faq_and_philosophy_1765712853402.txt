@@ -1,0 +1,59 @@
+REPLIT PROMPT — UPDATE FAQ COPY + ADD SETFLO PHILOSOPHY BLOCK
+
+GOAL:
+Update the website’s FAQ copy to better reflect Setflo’s core philosophy (one focus, no guilt, no nagging),
+and add a one-paragraph “Setflo Philosophy” block in an appropriate place on the site.
+
+--------------------------------------------------
+1) UPDATE THESE FAQ ENTRIES (REPLACE EXISTING COPY)
+--------------------------------------------------
+
+FAQ: “Is it a habit tracker?”
+Replace the current answer with:
+
+“No. Setflo is a focus tracker. It measures time spent practicing one skill so you can see your effort add up — even if it happens in small sessions. It’s about progress you can feel and prove, not managing a list of habits.”
+
+---
+
+FAQ: “Why doesn’t Setflo have reminders / schedules / notifications?”
+Replace the current answer with:
+
+“Setflo is designed to support practice when you choose to show up — not to guilt you into it. It doesn’t try to run your day or create pressure. When you practice, you log the time. That’s it. Calm, minimal, and intentional.”
+
+NOTE:
+If the site currently mentions notifications more broadly, keep it consistent with the app:
+You may clarify that notifications are minimal and optional (for example, daily targets),
+but avoid language that suggests nagging reminders.
+
+---
+
+FAQ: “Do I have to create an account?”
+Replace the current answer with:
+
+“No. Setflo doesn’t require an account because your practice shouldn’t depend on logins, sign-ups, or syncing. It’s built to be simple and private: open the app, practice, log time, move on. Your data stays on your device unless you choose to export it.”
+
+--------------------------------------------------
+2) ADD A “THE SETFLO PHILOSOPHY” CONTENT BLOCK
+--------------------------------------------------
+
+Add a new section titled:
+
+“The Setflo Philosophy”
+
+Placement:
+Ideally near the top of the page after the hero section, or just before the FAQ section.
+
+Use this exact paragraph copy:
+
+“Setflo is built on a simple belief: meaningful progress comes from showing up, not being pushed. It doesn’t try to manage your habits, optimise your schedule, or keep you accountable with guilt. Instead, Setflo gives you a clear, honest record of time spent practicing one thing — so you can see that effort accumulate in its own way. No noise. No pressure. Just a quiet tool that respects your focus, your autonomy, and the long view of mastery.”
+
+--------------------------------------------------
+3) TONE & IMPLEMENTATION NOTES
+--------------------------------------------------
+
+• Keep tone slightly rebellious but calm and minimal  
+• Maintain existing typography and layout style  
+• Do NOT add new features or promises (no AI, no social, no habit stacks)  
+• Ensure copy aligns with the guiding principle: “One focus. No distractions.”  
+
+END OF PROMPT
