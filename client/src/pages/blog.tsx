@@ -11,7 +11,7 @@ const blogPosts = [
     title: "One focus beats ten habits",
     excerpt:
       "Why committing to a single practice yields better results than spreading yourself thin across multiple habits.",
-    date: "December 14, 2024",
+    date: "December 14, 2025",
     readTime: "4 min read",
   },
   {
@@ -19,7 +19,7 @@ const blogPosts = [
     title: "Practice snacks: why small sessions compound",
     excerpt:
       "The power of short, consistent practice sessions and why 15 minutes a day beats 2 hours once a week.",
-    date: "December 10, 2024",
+    date: "December 10, 2025",
     readTime: "5 min read",
   },
   {
@@ -27,7 +27,7 @@ const blogPosts = [
     title: "Greasing the groove (without the hype)",
     excerpt:
       "A practical look at the 'greasing the groove' technique and how to apply it to any skill.",
-    date: "December 5, 2024",
+    date: "December 5, 2025",
     readTime: "6 min read",
   },
 ];
@@ -65,7 +65,9 @@ export default function Blog() {
                           <span>·</span>
                           <span>{post.readTime}</span>
                         </div>
-                        <h2 className="text-xl font-semibold mb-2">{post.title}</h2>
+                        <h2 className="text-xl font-semibold mb-2">
+                          {post.title}
+                        </h2>
                         <p className="text-muted-foreground">{post.excerpt}</p>
                       </div>
                       <ArrowRight className="w-5 h-5 text-muted-foreground shrink-0 mt-1" />
