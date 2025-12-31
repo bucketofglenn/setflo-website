@@ -17,7 +17,11 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between gap-4">
-        <Link href="/" data-testid="link-home" className="flex items-center gap-2">
+        <Link
+          href="/"
+          data-testid="link-home"
+          className="flex items-center gap-2"
+        >
           <img src={logoImage} alt="Setflo" className="w-8 h-8 rounded-lg" />
           <span className="text-xl font-bold tracking-tight">Setflo</span>
         </Link>
@@ -41,8 +45,9 @@ export default function Header() {
 
         <div className="hidden md:flex items-center gap-3 flex-wrap">
           <Button asChild data-testid="button-download-header">
-            {/* TODO: Replace with actual App Store URL */}
-            <a href="#download">Download on iOS</a>
+            <a href="https://apps.apple.com/us/app/setflo/id6756414411">
+              Download on iOS
+            </a>
           </Button>
         </div>
 
@@ -53,7 +58,11 @@ export default function Header() {
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           data-testid="button-mobile-menu"
         >
-          {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+          {mobileMenuOpen ? (
+            <X className="h-5 w-5" />
+          ) : (
+            <Menu className="h-5 w-5" />
+          )}
         </Button>
       </div>
 
@@ -75,7 +84,11 @@ export default function Header() {
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="mt-2" data-testid="button-download-mobile">
+            <Button
+              asChild
+              className="mt-2"
+              data-testid="button-download-mobile"
+            >
               <a href="#download">Download on iOS</a>
             </Button>
           </nav>

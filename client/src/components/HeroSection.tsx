@@ -25,21 +25,24 @@ export default function HeroSection() {
               className="mt-6 text-base md:text-lg text-muted-foreground max-w-xl leading-relaxed"
               data-testid="text-hero-description"
             >
-              Track the total time you spend practicing one skill — and watch it add up.
+              Track the total time you spend practicing one skill — and watch it
+              add up.
             </p>
 
             <p
               className="mt-6 text-sm text-muted-foreground/80 max-w-lg leading-relaxed italic"
               data-testid="text-hero-philosophy"
             >
-              No habit stacks. No schedules. No noise.<br />
+              No habit stacks. No schedules. No noise.
+              <br />
               Just show up, log your time, and let consistency compound.
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-6">
               <Button size="lg" asChild data-testid="button-download-hero">
-                {/* TODO: Replace with actual App Store URL */}
-                <a href="#download">Download on the App Store</a>
+                <a href="https://apps.apple.com/us/app/setflo/id6756414411">
+                  Download on the App Store
+                </a>
               </Button>
               <Link
                 href="#faq"

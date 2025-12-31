@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import { SiInstagram } from "react-icons/si";
 import logoImage from "@assets/icon_1765710565012.png";
 
 const footerLinks = [
@@ -18,7 +17,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           <div>
             <div className="flex items-center gap-2">
-              <img src={logoImage} alt="Setflo" className="w-8 h-8 rounded-lg" />
+              <img
+                src={logoImage}
+                alt="Setflo"
+                className="w-8 h-8 rounded-lg"
+              />
               <span className="text-xl font-bold tracking-tight">Setflo</span>
             </div>
             <p className="mt-3 text-sm text-muted-foreground max-w-xs">
@@ -41,24 +44,13 @@ export default function Footer() {
               ))}
             </nav>
           </div>
-
-          <div>
-            <h4 className="text-sm font-semibold mb-4">Connect</h4>
-            <a
-              href="https://instagram.com/setflo.io"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
-              data-testid="link-instagram"
-            >
-              <SiInstagram className="h-4 w-4" />
-              @setflo.io
-            </a>
-          </div>
         </div>
 
         <div className="mt-12 pt-8 border-t border-border">
-          <p className="text-sm text-muted-foreground text-center" data-testid="text-copyright">
+          <p
+            className="text-sm text-muted-foreground text-center"
+            data-testid="text-copyright"
+          >
             &copy; {currentYear} Setflo. All rights reserved.
           </p>
         </div>
